@@ -15,7 +15,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import plotly.express as px
 
-file_path = r"C:/Users/venka/Downloads/cleaned_Global_clustering.csv"
+file_path = r"cleaned_Global_clustering.csv"
 df_raw = pd.read_csv(file_path)
 
 avg_countries = df_raw.groupby("Country").mean().reset_index()
